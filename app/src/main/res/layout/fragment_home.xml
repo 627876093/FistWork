@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBg"
+    android:orientation="vertical">
+    <!--使用时添加为头部-->
+    <!--轮播图-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_home"
+        style="@style/FillToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_homefl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_homefl" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_solid_white20"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/et_home_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_solid_white20"
+                    android:gravity="center"
+                    android:hint="搜索商家或分类"
+                    android:imeOptions="actionSearch"
+                    android:lines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/colorGray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="40dp" />
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:background="@drawable/shape_solid_white20"-->
+                <!--android:hint="搜索商家或分类"-->
+                <!--android:imeOptions="actionSearch"-->
+                <!--android:lines="1"-->
+                <!--android:padding="8dp"-->
+                <!--android:textColor="@color/colorGray"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textCursorDrawable="@null"-->
+                <!--android:maxLength="10"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_centerInParent="true"/>-->
+
+                <ImageView
+                    android:id="@+id/img_home_searchByVoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:src="@drawable/home_search" />
+
+            </RelativeLayout>
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/ib_home_inbox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:background="@null"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:padding="12dp"-->
+            <!--android:src="@drawable/ic_inbox" />-->
+
+            <cn.com.zlct.diamondgo.custom.CircleTextView
+                android:id="@+id/toolbar_iconCartDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-21dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:padding="2px"
+                android:textColor="@color/colorAccent"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/toolbar_iconLine"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorLightGray" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_mainHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

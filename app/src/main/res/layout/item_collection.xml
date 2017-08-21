@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_collection"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/tv_tj"
+            fresco:failureImage="@drawable/img_fail"
+            fresco:failureImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/img_loading"
+            fresco:viewAspectRatio="1" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:id="@+id/tv_collectionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/tv_collectionType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="type"
+                android:textSize="12sp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/tv_collectionMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="money"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

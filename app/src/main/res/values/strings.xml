@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">钻购</string>
+    <string name="passwordLimit">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="idCardLimit">0123456789X</string>
+    <string name="numDecimalLimit">0123456789.</string>
+    <string name="numberLimit">0123456789</string>
+
+    <string name="main0">首页</string>
+    <string name="main1">推广信息</string>
+    <string name="main2">分类</string>
+    <string name="main3">购物车</string>
+    <string name="main4">我的</string>
+
+    <string name="storagePer">存储权限被拒绝，使用过程中可能会出现未知错误</string>
+    <string name="payTips">提示: 由于服务器处理充值操作存在延时，具体的充值结果以及到账时间请以私信为准！</string>
+
+    <item name="tag_id" type="id" />
+    <item name="tag_relation" type="id" />
+    <item name="tag_relation2" type="id" />
+    <item name="tag_url" type="id" />
+    <item name="tag_order_btn1" type="id" />
+    <item name="tag_order_btn2" type="id" />
+
+</resources>

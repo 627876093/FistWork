@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primaryBg"
+    android:padding="40dp"
+    android:visibility="gone"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tv_emptyTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无相关内容"
+        android:textSize="20sp"
+        android:textColor="@color/colorLightGray"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorLightGray"/>
+</LinearLayout>

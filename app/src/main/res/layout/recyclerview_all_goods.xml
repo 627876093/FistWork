@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/shape_stroke_home_good">
+       <com.facebook.drawee.view.SimpleDraweeView
+           android:id="@+id/all_homeSinglesun"
+           fresco:actualImageScaleType="centerCrop"
+           fresco:failureImage="@drawable/img_fail"
+           fresco:placeholderImage="@drawable/img_loading"
+           fresco:placeholderImageScaleType="centerCrop"
+           fresco:viewAspectRatio="1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="15dp"/>
+       <TextView
+           android:id="@+id/all_tittle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="all_tittle"
+           android:textColor="@color/colorBlack"
+           android:textSize="14sp"
+           android:layout_gravity="center"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:maxLines="1"/>
+       <TextView
+           android:id="@+id/all_money"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="all_money"
+           android:textColor="@color/colorRed"
+           android:textSize="14sp"
+           android:layout_gravity="center"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"/>
+   </LinearLayout>
+</LinearLayout>

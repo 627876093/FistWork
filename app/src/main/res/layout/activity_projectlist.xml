@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_Poject"
+        style="@style/FillToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/shape_solid_white20">
+
+                <EditText
+                    android:id="@+id/et_poject_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/shape_solid_white20"
+                    android:hint="输入宝贝关键词"
+                    android:imeOptions="actionSearch"
+                    android:lines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/colorGray"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textCursorDrawable="@null"/>
+
+                <ImageView
+                android:id="@+id/img_Poject_searchByVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/home_search"
+                android:padding="8dp"/>
+
+            </RelativeLayout>
+
+            <ImageButton
+            android:id="@+id/ib_home_inbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:src="@drawable/toolbar_back" />
+
+            <cn.com.zlct.diamondgo.custom.CircleTextView
+                android:id="@+id/toolbar_iconCartDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-21dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:padding="2px"
+                android:textColor="@color/colorAccent"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/toolbar_iconLine"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorLightGray" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#0fff"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="5dp">
+        <RadioButton
+            android:id="@+id/rb_zh"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableTop="@drawable/poject_main0"
+            android:drawablePadding="1dp"
+            android:text="综合"
+            android:textSize="12sp"
+            android:textColor="@drawable/selector_poject_red"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/rb_xl"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableTop="@drawable/poject_main1"
+            android:drawablePadding="1dp"
+            android:text="销量"
+            android:textSize="12sp"
+            android:textColor="@drawable/selector_poject_red"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/rb_jg"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:drawableTop="@drawable/poject_main2"
+            android:drawablePadding="1dp"
+            android:text="价格"
+            android:textSize="12sp"
+            android:textColor="@drawable/selector_poject_red"
+            android:gravity="center"/>
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorLightGray"/>
+
+    <include layout="@layout/empty_tips"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_Poject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_Poject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

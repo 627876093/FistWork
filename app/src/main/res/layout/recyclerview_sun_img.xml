@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_sunImgItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="4dp">
+    <ImageView
+        android:id="@+id/iv_sunImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+    <ImageButton
+        android:id="@+id/ib_sunImgDel"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="visible"
+        android:paddingLeft="12dp"
+        android:paddingBottom="12dp"
+        android:background="@drawable/del_img_btn"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/list1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="visible">-->
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+            <!--android:id="@+id/simple"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toRightOf="@+id/tv_tj"-->
+            <!--fresco:failureImage="@drawable/img_fail"-->
+            <!--fresco:failureImageScaleType="centerCrop"-->
+            <!--fresco:placeholderImage="@drawable/img_loading"-->
+            <!--fresco:viewAspectRatio="1" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/list2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="10dp"-->
+        <!--android:visibility="visible">-->
+
+        <cn.com.zlct.diamondgo.custom.ListViewInScrollView
+            android:id="@+id/lv_list2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:visibility="visible"
+            android:layout_marginBottom="50dp"/>
+
+    <!--</LinearLayout>-->
+</LinearLayout>

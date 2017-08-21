@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBg"
+    tools:context="cn.com.zlct.diamondgo.activity.BankCardAddActivity">
+    <include layout="@layout/toolbar_right_text"/>
+    <TextView
+        android:padding="10dp"
+        android:text="请添加持卡人本人的银行卡"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卡号"/>
+        <EditText
+            android:id="@+id/et_cardNum"
+            android:textSize="18sp"
+            android:background="@null"
+            android:hint="输入银行卡卡号"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="number"
+            android:imeOptions="actionGo"
+            android:maxLength="20"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/sp_solid_red_radius"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="14dp"
+        android:text="下一步"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>

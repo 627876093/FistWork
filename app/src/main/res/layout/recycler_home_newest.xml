@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_homeNewestItemLeft"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorWhite">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_newestImgLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        fresco:placeholderImage="@drawable/img_loading"
+        fresco:failureImage="@drawable/img_fail"
+        fresco:actualImageScaleType="fitCenter"/>
+    <TextView
+        android:id="@+id/tv_newestTitleLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:lines="2"
+        android:ellipsize="end"/>
+    <TextView
+        android:id="@+id/tv_newestCountTimerLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/colorAccent"/>
+</LinearLayout>

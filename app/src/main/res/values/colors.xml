@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EE544A</color>
+    <color name="colorPrimaryDark">#EE544A</color>
+    <color name="colorAccent">#EE544A</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorRed">#f00</color>
+    <color name="colorGray">#888</color>
+    <color name="colorTrans">#0fff</color>
+    <color name="colorLightGray">#CCCCCC</color>
+    <color name="colorDeepGray">#666666</color>
+    <color name="colorDeepBlack">#333333</color>
+    <color name="colorTransGray">#6666</color>
+    <color name="progressBarBg">#EDEBE6</color>
+    <color name="colorLightBlack">#666666</color>
+    <color name="primaryBg">#F7F7FA</color>
+    <color name="colorPink">#FBF2F3</color>
+    <color name="colorBg">#EEEEEE</color>
+    <color name="homeGood">#c8c8c8</color>
+</resources>
