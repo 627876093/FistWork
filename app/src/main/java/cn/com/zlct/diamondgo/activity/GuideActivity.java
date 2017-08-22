@@ -77,6 +77,7 @@ public class GuideActivity extends BaseActivity implements ViewPager.OnPageChang
         }
     }
 
+
     @Override
     public void onPageScrollStateChanged(int state) {
     }
